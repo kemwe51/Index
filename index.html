@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -110,6 +109,26 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+    .swiper {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+    .swiper-slide img {
+      max-width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+    .swiper-slide video {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
     footer {
       background: #0a0f1c;
       color: white;
@@ -126,7 +145,6 @@
     <a href="#leistungen">Leistungen</a>
     <a href="#maschinen">Maschinen</a>
     <a href="#materialien">Materialien</a>
-    <a href="#usp">Vorteile</a>
     <a href="#kontakt">Kontakt</a>
   </nav>
 
@@ -138,14 +156,11 @@
     <p>Revolutionäre CNC-Fertigung für das Zeitalter der Industrie 4.0</p>
   </header>
 
-  <!-- Neuer Leistungsabschnitt mit Lottie -->
   <section id="leistungen" style="background: radial-gradient(circle at top left, #0d1117, #161b22); position: relative; overflow: hidden; padding: 100px 20px;">
     <h2 style="animation: fadeInUp 1s ease-in-out;">🚀 Unsere Leistungen</h2>
-
     <div class="highlight" style="animation: fadeInUp 1.2s ease-in-out;">
       High-Tech Fertigung mit intelligenten CNC-Maschinen – für Einzelteile und Kleinserien, voll integriert in digitale Wertschöpfungsketten.
     </div>
-
     <div class="leistungen-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:40px; margin-top:60px;">
       <div class="leistung-card">
         <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_myejiggj.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin: 0 auto;" loop autoplay></lottie-player>
@@ -168,40 +183,37 @@
         <p>End-to-End Fertigung vormontierter Komponenten.</p>
       </div>
     </div>
-
     <div id="live-data" class="highlight" style="margin-top: 70px; animation: pulseFade 2s infinite;">
       <h3>🔄 Live Produktionsdaten (Demo)</h3>
       <p>Spindel: <span id="rpm">12000</span> RPM | Temperatur: <span id="temp">42</span>°C | Toleranz: <span id="tol">±0.003mm</span></p>
     </div>
   </section>
 
-  
-<section id="maschinen">
-  <h2>Unsere Maschinen</h2>
-  <p>Unsere Anlagen sind digital vernetzt und bereit für adaptive Produktion mit maximaler Flexibilität und Präzision.</p>
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="IMG20250325155345.jpg" alt="CNC Maschine 1"></div>
-      <div class="swiper-slide"><img src="IMG20250325162826.jpg" alt="CNC Maschine 2"></div>
-      <div class="swiper-slide"><video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay loop muted></video></div>
+  <section id="maschinen">
+    <h2>Unsere Maschinen</h2>
+    <p>Unsere Anlagen sind digital vernetzt und bereit für adaptive Produktion mit maximaler Flexibilität und Präzision.</p>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="IMG20250325155345.jpg" alt="CNC Maschine 1"></div>
+        <div class="swiper-slide"><img src="IMG20250325162826.jpg" alt="CNC Maschine 2"></div>
+        <div class="swiper-slide"><video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay loop muted></video></div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="materialien">
-  <h2>Materialvielfalt</h2>
-  <p>Für jede Anwendung das richtige Material – präzise bearbeitet, dokumentiert und rückverfolgbar.</p>
-  <div class="material-list">
-    <div>Aluminium</div>
-    <div>Messing</div>
-    <div>Kupfer</div>
-    <div>Baustahl</div>
-    <div>Chromstahl</div>
-  </div>
-</section>
+  <section id="materialien">
+    <h2>Materialvielfalt</h2>
+    <p>Für jede Anwendung das richtige Material – präzise bearbeitet, dokumentiert und rückverfolgbar.</p>
+    <div class="material-list">
+      <div>Aluminium</div>
+      <div>Messing</div>
+      <div>Kupfer</div>
+      <div>Baustahl</div>
+      <div>Chromstahl</div>
+    </div>
+  </section>
 
-
-<footer id="kontakt">
+  <footer id="kontakt">
     <h2>Kontakt</h2>
     <p><strong>Telefon:</strong> +41 56 288 16 17</p>
     <p><strong>Adresse:</strong><br>Keller mechanische Werkstätte AG<br>Industriestrasse 18, 5106 Veltheim</p>
