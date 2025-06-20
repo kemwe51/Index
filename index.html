@@ -178,10 +178,16 @@
         <p>Industrie 4.0 ready: Live-Daten, Rückverfolgbarkeit und Analyse.</p>
       </div>
       <div class="leistung-card">
-        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_kkflmtur.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin: 0 auto;" loop autoplay></lottie-player>
-        <h3>Baugruppen</h3>
-        <p>End-to-End Fertigung vormontierter Komponenten.</p>
-      </div>
+  <lottie-player
+    src="https://assetsX.lottiefiles.com/packages/assembly-line-12363915.json"
+    background="transparent" speed="1"
+    style="width:100px; height:100px; margin:0 auto;"
+    loop autoplay>
+  </lottie-player>
+  <h3>Baugruppen</h3>
+  <p>End‑to‑End Fertigung vormontierter Komponenten.</p>
+</div>
+
     </div>
     <div id="live-data" class="highlight" style="margin-top: 70px; animation: pulseFade 2s infinite;">
       <h3>🔄 Live Produktionsdaten (Demo)</h3>
@@ -230,7 +236,7 @@
 
     setInterval(() => {
       document.getElementById("rpm").textContent = (11000 + Math.random()*2000).toFixed(0);
-      document.getElementById("temp").textContent = (38 + Math.random()*10).toFixed(1);
+      document.getElementById("temp").textContent = (30 + Math.random() * 7).toFixed(1);
       document.getElementById("tol").textContent = (Math.floor(Math.random() * 51 + 40)) + "%";
     }, 2000);
   </script>
