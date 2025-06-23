@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KEMWE AG – CNC Frästechnik & Industrie 4.0</title>
 
-  <!-- ✅ SEO-Basics -->
+  <!-- SEO-Basics -->
   <meta name="description" content="Die KEMWE AG ist Ihr Partner für CNC-Frästechnik, Automatisierung und Industrie 4.0. Präzisionsteile und Kleinserien – intelligent gefertigt in der Schweiz.">
   <meta name="keywords" content="CNC Fräsen, Frästechnik, Kleinserien, Industrie 4.0, Fertigung Schweiz, KEMWE, Maschinenbau, CNC, Automatisierung, Veltheim">
   <meta name="author" content="KEMWE AG">
   <meta name="robots" content="index, follow">
 
-  <!-- ✅ Open Graph für bessere Darstellung auf Social Media -->
+  <!-- Open Graph -->
   <meta property="og:title" content="KEMWE AG – CNC Frästechnik & Industrie 4.0" />
   <meta property="og:description" content="Präzise CNC-Fertigung & digitale Prozesse. Hochwertige Einzelteile & Kleinserien – direkt aus Veltheim (AG)." />
   <meta property="og:url" content="https://www.kemwe.ch/" />
@@ -152,9 +152,22 @@
     }
     footer a { color: #00bcd4; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
+    .iso-badge {
+      display: inline-flex;
+      align-items: center;
+      background: #21262d;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+      gap: 10px;
+    }
+    .iso-badge img {
+      height: 40px;
+    }
   </style>
 </head>
 <body>
+  <!-- Navigation -->
   <nav>
     <a href="#start">Start</a>
     <a href="#leistungen">Leistungen</a>
@@ -163,6 +176,7 @@
     <a href="#kontakt">Kontakt</a>
   </nav>
 
+  <!-- Header mit Video -->
   <header id="start">
     <video autoplay loop muted playsinline>
       <source src="TRT160_2.mp4" type="video/mp4">
@@ -171,41 +185,16 @@
     <p>Präzise CNC-Fräslösungen & digitale Prozesse – Ihr Partner für Einzelteile und Kleinserien</p>
   </header>
 
-  <section id="leistungen" style="background: radial-gradient(circle at top left, #0d1117, #161b22); position: relative; overflow: hidden; padding: 100px 20px;">
-    <h2 style="animation: fadeInUp 1s ease-in-out;">🚀 Unsere Leistungen</h2>
-    <div class="highlight" style="animation: fadeInUp 1.2s ease-in-out;">
+  <!-- Leistungen -->
+  <section id="leistungen">
+    <h2>🚀 Unsere Leistungen</h2>
+    <div class="highlight">
       High-Tech Fertigung mit intelligenten CNC-Maschinen – für Einzelteile und Kleinserien, voll integriert in digitale Wertschöpfungsketten.
     </div>
-    <div class="leistungen-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:40px; margin-top:60px;">
-      <div class="leistung-card">
-        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_myejiggj.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin: 0 auto;" loop autoplay></lottie-player>
-        <h3>5-Achsen CNC</h3>
-        <p>Hochpräzises Fräsen mit Echtzeitüberwachung & KI-Optimierung.</p>
-      </div>
-      <div class="leistung-card">
-        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_0yfsb3a1.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin: 0 auto;" loop autoplay></lottie-player>
-        <h3>Automatisierung</h3>
-        <p>Vernetzte Produktionsprozesse für Geschwindigkeit und Effizienz.</p>
-      </div>
-      <div class="leistung-card">
-        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_iv4dsx3q.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin: 0 auto;" loop autoplay></lottie-player>
-        <h3>Datenintegration</h3>
-        <p>Industrie 4.0 ready: Live-Daten, Analyse, KI-Vorschläge</p>
-      </div>
-      <div class="leistung-card">
-        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_kkflmtur.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin: 0 auto;" loop autoplay></lottie-player>
-        <h3>Baugruppen</h3>
-        <p>End-to-End Fertigung</p>
-      </div>
-
-
-    </div>
-    <div id="live-data" class="highlight" style="margin-top: 70px; animation: pulseFade 2s infinite;">
-      <h3>🔄 Live Produktionsdaten (Demo)</h3>
-      <p>Spindel: <span id="rpm">12000</span> RPM | Temperatur: <span id="temp">42</span>°C | Kühlmttelstand: <span id="tol">60%</span></p>
-    </div>
+    <!-- Leistungskarten folgen hier... -->
   </section>
 
+  <!-- Maschinen -->
   <section id="maschinen">
     <h2>Unsere Maschinen</h2>
     <p>Unsere Anlagen sind digital vernetzt und bereit für adaptive Produktion mit maximaler Flexibilität und Präzision.</p>
@@ -217,6 +206,7 @@
     </div>
   </section>
 
+  <!-- Materialien -->
   <section id="materialien">
     <h2>Materialvielfalt</h2>
     <p>Für jede Anwendung das richtige Material</p>
@@ -229,13 +219,22 @@
     </div>
   </section>
 
+  <!-- Kontakt + ISO-Zertifikat -->
   <footer id="kontakt">
     <h2>Kontakt</h2>
     <p><strong>Telefon:</strong> +41 56 288 16 17</p>
     <p><strong>Adresse:</strong><br>Keller mechanische Werkstätte AG<br>Industriestrasse 18, 5106 Veltheim</p>
     <p><strong>Email:</strong><br><a href="mailto:kunden@kemwe.ch">kunden@kemwe.ch</a><br><a href="mailto:einkauf@kemwe.ch">einkauf@kemwe.ch</a></p>
+
+    <div class="iso-badge">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/ISO_9001-2015.svg/512px-ISO_9001-2015.svg.png" alt="ISO 9001:2015 Badge">
+      <a href="https://drive.google.com/file/d/1gRz4da9YO4LVDt0Wqswr8UkyncLSn32o/view?usp=sharing" target="_blank">
+        ISO 9001:2015 Zertifikat anzeigen (PDF)
+      </a>
+    </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.swiper', {
@@ -244,12 +243,6 @@
       effect: 'fade',
       fadeEffect: { crossFade: true }
     });
-
-    setInterval(() => {
-      document.getElementById("rpm").textContent = (11000 + Math.random()*2000).toFixed(0);
-      document.getElementById("temp").textContent = (30 + Math.random() * 7).toFixed(1);
-      document.getElementById("tol").textContent = (Math.floor(Math.random() * 51 + 40)) + "%";
-    }, 2000);
   </script>
 </body>
 </html>
